@@ -6,6 +6,7 @@ A date-planning app for couples: schedule a date through a cascading question wi
 
 ![screenshot placeholder](./ss/mainpage.png)
 ![screenshot placeholder](./ss/calendar.png)
+![screenshot placeholder](./ss/editpages.png)
 
 ---
 
