@@ -1,6 +1,6 @@
 # OurCalendar
 
-A date-planning app for couples: schedule a date through a cascading question wizard (what to do → sub-options → when), view everything on a shared calendar, and edit or cancel plans as they change. This was a little fun weekend project I did after my Girlfriend jokingly mentioned me doing something we could "write our future dates" on.
+A date-planning app for couples: schedule a date through a question wizard, view everything on a shared calendar, and edit or cancel plans as they change. This was a little fun weekend project I did after my Girlfriend jokingly mentioned me doing something we could "write our future dates" on.
 
 **Live demo:** _https://our-calendar-app.vercel.app/_
 
