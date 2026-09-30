@@ -1,0 +1,126 @@
+.backButton {
+  background-color: #FF7873;
+  border: 0px;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font-family: 'Momo Trust Display', sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: #f79591;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.detailCard {
+  background-color: #F0E9B6;
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  animation: scaleIn 0.2s ease-in-out;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #827148;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  color: #a09c80;
+}
+
+.cardActivity {
+  font-family: 'AdobeClean-Bold', sans-serif;
+  color: #827148;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin: 0 0 0.75rem;
+  padding-right: 1.5rem; /* avoid overlapping the close button */
+}
+
+.cardDate {
+  font-family: 'AdobeClean-Bold', sans-serif;
+  color: #827148;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.cardNote {
+  font-family: 'AdobeClean-Bold', sans-serif;
+  color: #a09c80;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.editLink {
+  display: inline-block;
+  background-color: #FF7873;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-family: 'Momo Trust Display', sans-serif;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.editLink:hover {
+  background-color: #f79591;
+}
+
+@media (max-width: 600px) {
+  .rbc-event {
+    font-size: 10px;
+    padding: 1px 3px;
+    line-height: 1.2;
+  }
+
+  .rbc-event-content {
+    white-space: normal;
+    overflow: visible;
+  }
+}

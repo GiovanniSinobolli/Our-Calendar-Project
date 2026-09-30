@@ -1,0 +1,114 @@
+.listWrapper {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Chewy;
+  color: #F8B2B2;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #F0E9B6;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: #827148;
+  font-family: 'AdobeClean-Bold', sans-serif;
+}
+
+.cardActivity {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cardDate {
+  font-size: 0.9rem;
+}
+
+.cardNote {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #a09c80;
+}
+
+.cardActions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.editButton,
+.deleteButton {
+  border: 0px;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-family: 'Momo Trust Display', sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.editButton {
+  background-color: #FF7873;
+}
+
+.editButton:hover {
+  background-color: #f79591;
+}
+
+.deleteButton {
+  background-color: #a09c80;
+}
+
+.deleteButton:hover {
+  background-color: #827148;
+}
+
+.editButton:disabled,
+.deleteButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.backButton {
+  background-color: #FF7873;
+  border: 0px;
+  padding: 8px 16px;
+  border-radius: 7px;
+  font-family: 'Momo Trust Display', sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.backButton:hover {
+  background-color: #f79591;
+}
+
+.editWrapper {
+  padding: 1rem;
+}

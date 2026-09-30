@@ -1,13 +1,6 @@
 :root {
-  --background: #ffffff;
+  --background: #744577;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html {
@@ -45,5 +38,135 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* Toolbar (Today / Back / Next / view switcher / month title) */
+.rbc-toolbar {
+  font-family: 'Momo Trust Display', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.rbc-toolbar-label {
+  font-family: Chewy;
+  color: #F8B2B2;
+  font-size: 28px;
+}
+
+.rbc-toolbar button {
+  background-color: #F0E9B6;
+  color: #827148;
+  border: 0px;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-family: 'Momo Trust Display', sans-serif;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #a09c80;
+  color: #F0E9B6;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #FF7873;
+  color: #fff;
+}
+
+.rbc-toolbar button.rbc-active:hover {
+  background-color: #f79591;
+}
+
+/* Overall calendar surface */
+.rbc-calendar {
+  background-color: #f9e9cf;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* Day-of-week header row */
+.rbc-header {
+  color: #827148;
+  font-family: 'AdobeClean-Bold', sans-serif;
+  padding: 10px 0;
+  border-bottom: 1px solid #d6c9a1;
+}
+
+/* Grid lines */
+.rbc-month-view,
+.rbc-time-view,
+.rbc-day-bg + .rbc-day-bg,
+.rbc-header + .rbc-header {
+  border-color: #d6c9a1;
+}
+
+/* Normal day cells */
+.rbc-day-bg{
+  background-color: #f7bbbb;
+}
+
+.rbc-off-range-bg {
+  background-color: #ddd7e7; 
+}
+
+.rbc-off-range {
+  color: #6f6690; 
+}
+
+/* Today's date */
+.rbc-today {
+  background-color: #faeabd;
+}
+
+/* Date numbers */
+.rbc-date-cell {
+  color: #827148;
+  font-family: 'AdobeClean-Bold', sans-serif;
+  padding: 4px 8px;
+}
+
+/* Events */
+.rbc-event {
+  background-color: #FF7873;
+  border: 0px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'AdobeClean-Bold', sans-serif;
+  padding: 2px 6px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.rbc-event:hover,
+.rbc-event.rbc-selected {
+  background-color: #f79591;
+}
+
+.rbc-show-more {
+  color: #FF7873;
+  font-family: 'AdobeClean-Bold', sans-serif;
+}
+
+
+/* responsiviness for mobiles */
+
+@media (max-width: 600px) {
+  .rbc-event {
+    font-size: 10px;
+    padding: 1px 3px;
+    line-height: 1.2;
+  }
+
+  .rbc-event-content {
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .rbc-toolbar-label {
+    font-size: 20px;
+  }
+
+  .rbc-toolbar button {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 }

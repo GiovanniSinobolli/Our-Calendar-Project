@@ -1,0 +1,152 @@
+.dateQuestion {
+    font-family: Chewy;
+    color: #F8B2B2;
+    font-size: 90px;
+    animation: fadeSlideIn 0.8s ease-in-out;
+}
+
+.wizard, .subOptions{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wizard {
+    margin-top: 5%;
+}
+
+.subOptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  padding-bottom: 7%;
+  animation: fadeSlideIn 1s ease-in-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subOptions button{
+    background-color: #F0E9B6;
+    margin: 7% 0%;
+    padding: 30px 50px;
+    border-radius: 10px;
+    color: #827148;
+    font-family: 'Momo Trust Display';
+    font-size: 20px;
+    border: 0px;
+    animation: fadeSlideIn 0.8s ease-in-out;
+}
+
+.subOptions button:hover, .subOptions .selected{
+    background-color: #a09c80;
+    color: #F0E9B6;
+    transition: ease-in-out 0.25s;
+}
+
+.backButton, .continueButton{
+    background-color: #FF7873;
+    border: 0px;
+    padding: 8px;
+    border-radius: 7px;
+    font-family: 'Momo trust display';
+    color: #ffffff;
+    animation: fadeSlideIn 1s ease-in-out;
+}
+
+.backButton:hover, .continueButton:hover{
+    background-color: #f79591;
+    transition: ease-in-out 0.25s;
+}
+
+/* day n hour  */
+
+.dateTimeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 320px;
+  margin-top: 1rem;
+}
+
+.dateTimeForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color, #FF7873);
+  font-family: 'AdobeClean-Bold';
+}
+
+.dateTimeForm input {
+  padding: 0.6rem 0.75rem;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'AdobeClean-Bold';
+  background-color: #4A4466;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  color: #fcfbfb;
+}
+
+.dateTimeForm input:focus {
+  outline: none;
+  border-color: var(--accent-color, #6c5ce7);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.15);
+}
+
+.dateTimeForm button[type='submit'] {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color, #FF7873);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.dateTimeForm button[type='submit']:hover:not(:disabled) {
+  background-color: var(--accent-color-hover, #d6a18c);
+}
+
+.dateTimeForm button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* responsiveness for mobile */
+
+@media (max-width: 600px) {
+  .dateQuestion {
+    font-size: 36px;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .subOptions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0 1rem 7%;
+  }
+
+  .subOptions button {
+    padding: 20px 24px;
+    font-size: 16px;
+    margin: 4% 0;
+  }
+
+  .wizard {
+    margin-top: 8%;
+  }
+}
