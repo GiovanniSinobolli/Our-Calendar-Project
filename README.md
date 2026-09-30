@@ -4,8 +4,8 @@ A date-planning app for couples: schedule a date through a cascading question wi
 
 **Live demo:** _https://our-calendar-app.vercel.app/_
 
-![screenshot placeholder](./docs/screenshot-wizard.png)
-![screenshot placeholder](./docs/screenshot-calendar.png)
+![screenshot placeholder](./ss/mainpage.png)
+![screenshot placeholder](./ss/calendar.png)
 
 ---
 
